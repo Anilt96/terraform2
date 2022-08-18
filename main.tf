@@ -106,7 +106,7 @@ resource "azurerm_virtual_machine" "main" {
         managed_disk_type = "Standard_LRS"
     }
     os_profile {
-        computer_name    = "${var.hostname}"
+        computer_name    = "jenkins"
         admin_username   = "adminuser1"
         admin_password   = "admin@1234"
     }
